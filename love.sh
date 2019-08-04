@@ -1,5 +1,5 @@
 #!/bin/sh
-# This is a comment!
-yum install python python-devel python-pip
-python-pip install boto
-python -c "import boto; print boto.Version"
+git clone https://github.com/rama2027/love
+virtualenv -p /usr/bin/python3 python3
+pip3 install boto3
+python3 ram.py
