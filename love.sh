@@ -1,6 +1,6 @@
 #!/bin/sh
-mkdir ram2
-cd ram2
+mkdir ram3
+cd ram3
 git clone https://github.com/rama2027/love.git
 sudo cp -r /home/ec2-user/.aws /var/lib/jenkins/workspace/test/ram2/.aws
 ls
