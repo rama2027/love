@@ -1,3 +1,4 @@
 #!/bin/sh
-sudo cp -r /home/ec2-user/.aws /var/lib/jenkins/workspace/test/
+export AWS_ACCESS_KEY_ID=AKIAVO4RZPOTCNCUGBF4
+export AWS_SECRET_ACCESS_KEY=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
 python3 ram.py
