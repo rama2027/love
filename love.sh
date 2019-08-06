@@ -1,5 +1,3 @@
 #!/bin/sh
-mkdir ram3
-cd ram3
-git clone https://github.com/rama2027/love.git
+cp -r /home/ec2-user/.aws /var/lib/jenkins/workspace/test/
 ls
