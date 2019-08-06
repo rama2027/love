@@ -1,4 +1,5 @@
 import boto3
+import os
 client = boto3.client(
     'ec2',
     aws_access_key_id=AWS_ACCESS_KEY_ID,
