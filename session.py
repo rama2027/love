@@ -17,3 +17,5 @@ resource = boto3.resource(
 )
 response = resource.describe_instances()
 print(response)
+
+export AWS_ACCESS_KEY_ID = aws_access_key_id
