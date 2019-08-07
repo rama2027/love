@@ -3,7 +3,7 @@ import os
 
 sts = session.client('sts')
 
-assumed_role_object=sts_client.assume_role(
+assumed_role_object=sts.assume_role(
     RoleArn=os.environ['IAM_ROLE'],
     RoleSessionName="AssumeRoleSession1"
 )
