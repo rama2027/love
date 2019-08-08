@@ -5,7 +5,7 @@ sts = boto3.client('sts')
 
 assumed_role_object= sts.assume_role(
     RoleArn=os.environ['IAM_ROLE'],
-    RoleSessionName="AssumeRoleSession1"
+    RoleSessionName="AssumeRoleSession"
 )
 credentials=assumed_role_object['Credentials']
 test = credentials['AccessKeyId']
