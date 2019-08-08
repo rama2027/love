@@ -3,7 +3,7 @@ import os
 
 sts = boto3.client('sts')
 
-assumed_role_object= sts.assume_role(
+assumed_role_object = sts.assume_role(
     RoleArn=os.environ['IAM_ROLE'],
     RoleSessionName="love"
 )
