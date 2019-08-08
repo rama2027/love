@@ -8,7 +8,8 @@ assumed_role_object= sts.assume_role(
     RoleSessionName="AssumeRoleSession1"
 )
 credentials=assumed_role_object['Credentials']
-
+test = credentials['AccessKeyId']
+print (test)
 resource = boto3.resource(
     'ec2',
     AWS_ACCESS_KEY_ID=credentials['AccessKeyId'],
