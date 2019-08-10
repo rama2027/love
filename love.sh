@@ -1,3 +1,3 @@
 #!/bin/sh
-python3 s3.py
+python3 session.py
 printenv
