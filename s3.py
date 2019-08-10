@@ -1,7 +1,7 @@
 import boto3
 import os
 
-boto_sts=boto3.client('sts')
+sts = boto3.client('sts')
 
 assumed_role_object = sts.assume_role(
     RoleArn=os.environ['IAM_ROLE'],
