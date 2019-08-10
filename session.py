@@ -8,12 +8,6 @@ assumed_role_object = sts.assume_role(
     RoleSessionName="love"
 )
 credentials = assumed_role_object['Credentials']
-resource = boto3.resource(
-    'ec2',
-    AWS_ACCESS_KEY_ID=credentials['AccessKeyId'],
-    AWS_SECRET_ACCESS_KEY=credentials['SecretAccessKey'],
-    AWS_SESSION_TOKEN=credentials['SessionToken'],
-    region_name = 'eu-west-1'
-)
+resource = boto3.resource('ec2',region_name = 'eu-west-1')
 response = resource.describe_instances()
 print(response)
