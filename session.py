@@ -9,7 +9,7 @@ assumed_role_object = sts.assume_role(
 )
 credentials = assumed_role_object['Credentials']
 
-ec2 = boto3.resource('ec2')
+ec2 = boto3.resource('ec2',region_name = 'eu-west-1')
  
 # Get information for all running instances
 running_instances = ec2.instances.filter(Filters=[{
