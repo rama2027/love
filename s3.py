@@ -12,7 +12,7 @@ newsession_id = assumed_role_object["Credentials"]["AccessKeyId"]
 newsession_key = assumed_role_object["Credentials"]["SecretAccessKey"]
 newsession_token = assumed_role_object["Credentials"]["SessionToken"]
 
-ec2 = boto3.resource('ec2',region_name='us-east-1',
+ec2 = boto3.resource('ec2',region_name='eu-west-1',
     aws_access_key_id=newsession_id,
     aws_secret_access_key=newsession_key,
     aws_session_token=newsession_token)
@@ -22,6 +22,6 @@ response = ec2.create_instances(
      MinCount=1,
      MaxCount=2,
      InstanceType='t2.micro',
-     KeyName='ec2-keypair'
+     KeyName='test'
  )
 print(response)
