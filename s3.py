@@ -18,7 +18,7 @@ ec2 = boto3.resource('ec2',region_name='eu-west-1',
     aws_session_token=newsession_token)
 
 response = ec2.create_instances(
-     ImageId='ami-00b6a8a2bd28daf19',
+     ImageId='ami-0bbc25e23a7640b9b',
      MinCount=1,
      MaxCount=2,
      InstanceType='t2.micro',
