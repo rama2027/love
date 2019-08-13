@@ -18,5 +18,5 @@ s3 = boto3.client('s3',region_name='eu-west-1',
     aws_session_token=newsession_token)
     
 response = s3.create_bucket(Bucket='my-bucket',CreateBucketConfiguration={
-        'LocationConstraint': 'EU'|'eu-west-1'})
+        'LocationConstraint': 'eu-west-1'})
 print(response)
