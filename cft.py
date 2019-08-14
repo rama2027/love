@@ -18,6 +18,7 @@ s3 = boto3.client('s3',
     aws_secret_access_key=newsession_key,
     aws_session_token=newsession_token)
     
-s3.create_bucket(Bucket=os.environ['Bucket'],CreateBucketConfiguration={'LocationConstraint': 'os.environ['Location']'})
+lov = s3.create_bucket(Bucket=os.environ['Bucket'],CreateBucketConfiguration={'LocationConstraint': 'os.environ['Location']'})
+print(lov['Location'][0])
 
 
