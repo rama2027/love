@@ -21,11 +21,7 @@ s3 = boto3.client('s3',
 Bucketname=os.environ['Bucket']
 file="test.json"
 lov = s3.create_bucket(Bucket=os.environ['Bucket'],CreateBucketConfiguration={'LocationConstraint': 'os.environ['Location']'})
-s3 = boto3.resource('s3')
-bucket = s3.Bucket(os.environ['Bucket'])
-bucket.upload_file("test.json", file)
-location = boto3.client('s3').get_bucket_location(Bucketname=os.environ['Bucket'])['LocationConstraint': 'os.environ['Location']']
-url = "https://s3-%s.amazonaws.com/%s/%s" % (location, bucket_name, key)
+url = s3.get_bucket_location(Bucketname=os.environ['Bucket'])['LocationConstraint': 'os.environ['Location']']
 print(url)
 
 
