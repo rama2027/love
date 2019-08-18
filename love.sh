@@ -1,3 +1,3 @@
 #!/bin/sh
-python3 s3.py
+python3 cft.py
 printenv
