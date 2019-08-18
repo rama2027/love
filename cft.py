@@ -18,6 +18,7 @@ s3 = boto3.client('s3',
     aws_secret_access_key=newsession_key,
     aws_session_token=newsession_token)
 response = s3.list_buckets()
-print(response)
-
+print('Existing buckets:')
+for bucket in response['Buckets']:
+    print(f'  {bucket["Name"]}')
 
