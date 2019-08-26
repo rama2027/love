@@ -21,6 +21,6 @@ response = s3.create_bucket(Bucket=os.environ['Bucket'],CreateBucketConfiguratio
 response = s3.list_buckets()
 Bucket=os.environ['Bucket']
 name = "test.sh"
-outPutname= none
+outPutname= "none.sh"
 print(response)
 response = s3_client.upload_file(name,Bucket,outPutname)
