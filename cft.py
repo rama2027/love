@@ -17,8 +17,9 @@ s3 = boto3.client('s3',
     aws_access_key_id=newsession_id,
     aws_secret_access_key=newsession_key,
     aws_session_token=newsession_token)
+response = s3.create_bucket(Bucket='love001',CreateBucketConfiguration={'LocationConstraint': 'eu-west-1'})
 response = s3.list_buckets()
 print('Existing buckets:')
 for bucket in response['Buckets']:
-    print(f'  {bucket["Name"]}')
-
+    name = bucket["Name"]
+    print('name')
