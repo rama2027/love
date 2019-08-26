@@ -23,4 +23,4 @@ Bucket=os.environ['Bucket']
 name = "test.sh"
 outPutname= "none.sh"
 print(response)
-response = s3_client.upload_file(name,Bucket,outPutname)
+response = s3.upload_file(name,Bucket,outPutname)
