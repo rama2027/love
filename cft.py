@@ -19,5 +19,7 @@ s3 = boto3.client('s3',
     aws_session_token=newsession_token)
 response = s3.create_bucket(Bucket=os.environ['Bucket'],CreateBucketConfiguration={'LocationConstraint': 'eu-west-1'})
 response = s3.list_buckets()
+Bucket=os.environ['Bucket']
+name = test.sh
 print(response)
-response = s3_client.upload_file(test.sh,Bucket=os.environ['Bucket'],test.sh)
+response = s3_client.upload_file(name,Bucket,name)
