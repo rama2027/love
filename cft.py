@@ -21,5 +21,6 @@ response = s3.create_bucket(Bucket='love001',CreateBucketConfiguration={'Locatio
 response = s3.list_buckets()
 print('Existing buckets:')
 for bucket in response['Buckets']:
-    name = bucket["Name"]
+    print(f'  {bucket["Name"]}')
+    name = {bucket["Name"]}
     print('name')
