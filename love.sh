@@ -1,3 +1,3 @@
 #!/bin/sh
-python3 cft.py
+python3 create.py
 printenv
