@@ -1,3 +1,3 @@
 #!/bin/sh
-python3 create.py
+python3 ec.py
 printenv
