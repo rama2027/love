@@ -1,3 +1,3 @@
 #!/bin/sh
-python3 ec2.py
+python3 creds.py
 printenv
