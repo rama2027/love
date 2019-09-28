@@ -14,6 +14,6 @@ newsession_token = assumed_role_object["Credentials"]["SessionToken"]
 
 os.environ['AWS_ACCESS_KEY_ID'] = newsession_key
 os.environ['AWS_SECRET_ACCESS_KEY'] = newsession_key
-os.environ['AWS_SESSION_TOKEN'] AWS_SESSION_TOKEN=newsession_token
+os.environ['AWS_SESSION_TOKEN'] = newsession_token
 
 print (os.environ['AWS_ACCESS_KEY_ID'])
