@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/local/bin/aws ec2 describe-instances
+/usr/bin/aws ec2 describe-instances
