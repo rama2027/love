@@ -1,3 +1,2 @@
 #!/bin/sh
-# This is a comment!
-echo Hello World
+/usr/local/bin/aws ec2 describe-instances
