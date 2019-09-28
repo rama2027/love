@@ -1,3 +1,3 @@
 #!/bin/sh
-python3 creds.py
+python creds.py
 printenv
