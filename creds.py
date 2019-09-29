@@ -17,3 +17,8 @@ os.environ['AWS_SECRET_ACCESS_KEY'] = newsession_key
 os.environ['AWS_SESSION_TOKEN'] = newsession_token
 
 print (os.environ['AWS_ACCESS_KEY_ID'])
+
+file = open('awscreds.sh', 'W')
+file .write('export AWS_ACCESS_KEY_ID=' + newsession_id + '\n')
+file .write('export AWS_SECRET_ACCESS_KEY=' + newsession_key + '\n')
+file .write('export AWS_SESSION_TOKEN=' + newsession_token + '\n')
