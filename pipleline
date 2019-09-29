@@ -1,0 +1,19 @@
+node{
+    stage("clone")
+    {
+    git branch: 'test', url: 'https://github.com/rama2027/love.git'    
+    }
+    
+    stage("List")
+    {
+    sh label: '', script: 'ls'    
+    }
+    stage("Descript")
+    {
+  sh label: '', script: 'sh love.sh'
+    }
+stage("Clean")
+{
+ deleteDir()  
+}
+}
