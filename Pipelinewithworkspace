@@ -1,0 +1,10 @@
+node{
+    stage("Descript")
+    {
+  sh label: '', script: ' "${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}@script/love.sh"'
+    }
+stage("Clean")
+{
+cleanWs() 
+}
+}
