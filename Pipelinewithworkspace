@@ -1,7 +1,7 @@
 node{
     stage("Descript")
     {
-  sh label: '', script: ' "${JENKINS_HOME}/workspace/${JOB_NAME}@scrpit/love.sh"'
+  sh label: '', script: ' "${JENKINS_HOME}/workspace/${JOB_NAME}@script/love.sh"'
     }
 stage("Clean")
 {
