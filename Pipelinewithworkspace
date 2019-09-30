@@ -1,7 +1,7 @@
 node{
     stage("Descript")
     {
-  sh label: '', script: ' "{ITEM_FULL_NAME}love.sh"'
+  sh label: '', script: ' "${ITEM_FULL_NAME}love.sh"'
     }
 stage("Clean")
 {
