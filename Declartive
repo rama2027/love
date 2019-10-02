@@ -9,7 +9,7 @@ ls
 stage("Change Permission")
 {
 steps{
-chmod 775 ${WORKSPACE}@script/love.sh
+chmod 775 "${WORKSPACE}@script/love.sh"
 }
 }
 }
