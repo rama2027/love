@@ -1,6 +1,18 @@
 pipeline{
 agent any
 stages{
+stage('list')
+{
+steps{
+ls
+}
+stage("Change Permission")
+{
+steps{
+chmod 775 ${WORKSPACE}@script/love.sh
+}
+}
+}
 stage("Config"){
 steps {
 sh "${WORKSPACE}@script/love.sh"
