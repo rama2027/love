@@ -4,13 +4,13 @@ stages{
 stage("list")
 {
 steps{
-'ls'
+script: 'ls'
 }
 }
 stage("Change Permission")
 {
 steps{
-'chmod 775 "${WORKSPACE}@script/love.sh"'
+script: 'chmod 775 "${WORKSPACE}@script/love.sh"'
 }
 }
 stage("Config"){
