@@ -15,15 +15,6 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh label: '', script: 'sh "$WORKSPACE/love.sh"'
-                sh 'pwd'
-                sh 'cd $JOB_NAME/love'
-                sh 'pwd'
-                sh 'love.sh'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                    pwd
-                '''
             }
         }
         stage("Clean")
