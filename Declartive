@@ -11,16 +11,6 @@ pipeline {
                 '''
             }
         }
-        stage('Clone') {
-            steps {
-                sh 'git clone -b test git@github.com:rama2027/love.git'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                    pwd
-                '''
-            }
-        }
              stage('Describe') {
             steps {
                 sh 'pwd'
