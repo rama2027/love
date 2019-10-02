@@ -1,22 +1,14 @@
-pipeline{
-agent any
-stages{
-stage("list")
-{
-steps{
-script: 'ls'
-}
-}
-stage("Change Permission")
-{
-steps{
-script: 'chmod 775 "${WORKSPACE}@script/love.sh"'
-}
-}
-stage("Config"){
-steps {
-sh "${WORKSPACE}@script/love.sh"
-}
-}
-}
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "Hello World"'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
+            }
+        }
+    }
 }
