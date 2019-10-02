@@ -24,9 +24,7 @@ pipeline {
              stage('Describe') {
             steps {
                 sh 'pwd'
-                sh '$WORKSPACE/love/love.sh'
-                sh 'pwd'
-                sh 'love.sh'
+                sh label: '', script: 'sh "$WORKSPACE/love/love.sh"'
                 sh 'pwd'
                 sh 'cd $JOB_NAME/love'
                 sh 'pwd'
