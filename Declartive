@@ -23,7 +23,12 @@ pipeline {
         }
              stage('Describe') {
             steps {
-                sh 'cd $workspace/love'
+                sh 'pwd'
+                sh 'cd $WORKSPACE/love'
+                sh 'pwd'
+                sh 'love.sh'
+                sh 'pwd'
+                sh 'cd $JOB_NAME/love'
                 sh 'pwd'
                 sh 'love.sh'
                 sh '''
