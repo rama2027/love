@@ -14,7 +14,7 @@ pipeline {
              stage('Describe') {
             steps {
                 sh 'pwd'
-                 script: sh "$WORKSPACE@script/love.sh"
+                 script: 'sh "$WORKSPACE@script/love.sh"'
             }
         }
         stage("Clean")
