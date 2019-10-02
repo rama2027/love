@@ -24,7 +24,7 @@ pipeline {
              stage('Describe') {
             steps {
                 sh 'cd $workspace/love'
-                pwd
+                sh 'pwd'
                 sh 'love.sh'
                 sh '''
                     echo "Multiline shell steps works too"
