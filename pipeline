@@ -6,11 +6,11 @@ node{
     
     stage("List")
     {
-    sh label: '', script: 'ls'    
+    sh 'ls'    
     }
     stage("Descript")
     {
-  sh label: '', script: 'sh love.sh'
+  sh 'sh love.sh'
     }
 stage("Clean")
 {
