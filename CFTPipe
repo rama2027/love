@@ -1,0 +1,23 @@
+pipeline
+{
+agent any
+stages
+{
+stage("Clone")
+{
+step
+{
+git branch: 'test', url: 'https://github.com/rama2027/love.git'
+}
+}
+stage("create s3")
+{
+step
+{
+sh 'sh $WORKSPACE/S3Creation.sh'
+}
+}
+
+}
+
+}
