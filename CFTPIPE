@@ -5,14 +5,21 @@ stages
 {
 stage("Clone")
 {
-step
+steps
 {
 git branch: 'test', url: 'https://github.com/rama2027/love.git'
 }
 }
+stage("Credentials")
+{
+steps
+{
+sh 'sh python creds.py'
+}
+}
 stage("create s3")
 {
-step
+steps
 {
 sh 'sh $WORKSPACE/S3Creation.sh'
 }
