@@ -14,7 +14,7 @@ stage("Credentials")
 {
 steps
 {
-sh 'sh python creds.py'
+sh 'python creds.py'
 }
 }
 stage("create s3")
