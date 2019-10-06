@@ -24,5 +24,12 @@ steps
 sh 'sh $WORKSPACE/S3Creation.sh'
 }
 }
+stage("upload s3")
+{
+steps
+{
+sh 'sh $WORKSPACE/upload.sh'
+}
+}
 }
 }
