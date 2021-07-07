@@ -1,8 +1,13 @@
 #!/bin/sh
-# This is a comment!
-mkdir love
-curl https://raw.githubusercontent.com/rama2027/love/556ce64a0c263e868c3c622da96ee382210f095f/test.sh -o  my-script.sh
-chmod a+rx my-script.sh
-./my-script.sh
-rm love.sh
-rm my-script.sh
+ls
+pwd
+whoami
+cd $WORKSPACE
+git clone -b test git@github.com:rama2027/love.git
+cd love
+pwd
+python3 EC2creation.py
+echo "This script is about to run another script."
+sh ./test.sh
+echo "This script has just run another script."
+

@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Basic Ec2 Instance
+Resources:
+  Testing:
+   Type: AWS::EC2::Instance
+   Properties:
+    ImageId: ami-028188d9b49b32a80
+    InstanceType: t2.micro
+    KeyName: test
+    SecurityGroups:
+     - default
